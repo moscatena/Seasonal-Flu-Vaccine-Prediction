@@ -1,6 +1,6 @@
 # dsc-phase-3-project
 
-![intro_img](./images/DHandHS.png)
+![intro_img](./Images/DHandHS.png)
 
 **Authors**: Anthony Warren, Marcelo Scatena, Piotr Czolpik
 
@@ -45,15 +45,15 @@ And we have used hyperparameter tuning to improve the last three models in the a
 
 * Since the chosen evaluation metric was Precision, we've create a graph recording our progress with the different models:
 
-![graph1](./images/Skyler_graph.png)
+![graph1](./Images/Skyler_graph.png)
 
 * The Feature Permutation shows how important each feature was for the model to generate a prediction. Here we selected the seven most important ones to display.
 
-![graph2](./images/Permutation_Importances.png)
+![graph2](./Images/Permutation_Importances.png)
 
 * Below is the Confusion Matrix of our most successful model, the tuned Gradient Boosting Classifier. With it we achieved a Precision of 0.7834 with an Accuracy of 0.7856.
 
-![graph3](./images/GBC_cm.jpeg)
+![graph3](./Images/GBC_cm.jpeg)
 
 * More graphs?
 
