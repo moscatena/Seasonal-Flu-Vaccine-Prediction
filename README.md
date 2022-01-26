@@ -22,39 +22,38 @@ The goal of this project was to build a classifier to predict whether someone wa
 
 ## Data
 
-The information we have is from a 2009 U.S. National H1N1 Flu Survey. The features cover social, economic and demographic background of the participants, as well as opinions on risks of illnes and vaccine effectiveness, and
+The information we have is from a 2009 U.S. National H1N1 Flu Survey. The features cover social, economic and demographic background of the participants, as well as opinions on risks of illnes, vaccine effectiveness, and behaviour. The full set of features can be found [here](https://www.drivendata.org/competitions/66/flu-shot-learning/page/211/). It consisted of over 26000 samples with 35 different features.
 ***
 
 ## Methods
+ 
+ * The dataset in question does not contain any continuous variables, making it perfect for classification. There were missing values that were inputed with median values when applicable to prevent information loss, and there were Categorical values in some features, that had to be OneHotEncoded to be part of the data.
 
-The dataset had to be cleaned and filtered. 
-* Small values?
-* Missing values?
-* Categorical values?
-* Feature Engeneering?
+* We've constructed simple prediction models using the following methods:
+ -- Logistic Regression
+ -- K-Nearest Neighbours
+ -- Naive Bayes
+ -- Decision Trees
+ -- Random Forest
+ -- Gradient Boost
+ -- Hist Gradient Boost
+And we have used hyperparameter tuning to improve the last three models in the above list.
 
-The data was modeled to arrive in the following visualisations:
-* Regression 1
-* Regression 2
-* Model 1
-* Model 2
-
-These visualisations will give us enoguh information to make accurate predictions of what...
 ***
 
 ## Results
 
-* The results indicate...
+* Since the chosen evaluation metric was Precision, we've create a graph recording our progress with the different models:
 
-![graph1](./images/image_1.png)
+![graph1](./images/Skyler_graph.png)
 
-* 2nd indication
+* The Feature Permutation shows how important each feature was for the model to generate a prediction. Here we selected the seven most important ones to display.
 
-![graph2](./images/image_2.png)
+![graph2](./images/Permutation_Importances.png)
 
-* 3rd indication
+* Below is the Confusion Matrix of our most successful model, the tuned Gradient Boosting Classifier. With it we achieved a Precision of 0.7834 with an Accuracy of 0.7856.
 
-![graph3](./images/image_3.png)
+![graph3](./images/GBC_cm.jpeg)
 
 * More graphs?
 
