@@ -1,12 +1,12 @@
 # dsc-phase-3-project
 
-![intro_img](./data/housing.png)
+![intro_img](./images/DHandHS.png)
 
 **Authors**: Anthony Warren, Marcelo Scatena, Piotr Czolpik
 
 ## Overview
 
-What were we hired for? What information we used from where? What are our recommendations? 
+The goal of this project was to build a classifier to predict whether someone was vaccinated against the seasonal flu or not as accurately as possible. Flu season comes around yearly. Every year people either take the flu shot or they do not. We made splits in Age gaps, genders, children in households, etc to see the statistical side of things before we did the modeling. Also we tried to answer some questions such as which subsets of the population should you target when hoping to increase the total number of people receiving the vaccine each year. Or weather to focus more on the female or male audience, or to focus on what age group. 
 
 * Recommendation 1
 * Recommendation 2
@@ -15,12 +15,14 @@ What were we hired for? What information we used from where? What are our recomm
 
 ## Business Problem
 
-Define our business problem. What information do we need? What do we look for? Why is this the best way?
+* Train and run a model that can correctly identify the likelihood that a randomly chosen individual received the seasonal flu vaccine or not
+* Find out which characteristics lead people to be more or less prone to have taken the seasonal flu vaccine 
+* Use that information to make targeted campaigns to raise vaccine awareness, and see what else could be done do to increase the number of vaccinated people in next campaigns
 ***
 
 ## Data
 
-What information are we using? Where did it came from? 
+The information we have is from a 2009 U.S. National H1N1 Flu Survey. The features cover social, economic and demographic background of the participants, as well as opinions on risks of illnes and vaccine effectiveness, and
 ***
 
 ## Methods
