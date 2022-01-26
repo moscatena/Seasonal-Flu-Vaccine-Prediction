@@ -8,8 +8,8 @@
 
 The goal of this project was to build a classifier to predict whether someone was vaccinated against the seasonal flu or not as accurately as possible. Flu season comes around yearly. Every year people either take the flu shot or they do not. We made splits in Age gaps, genders, children in households, etc to see the statistical side of things before we did the modeling. Also we tried to answer some questions such as which subsets of the population should you target when hoping to increase the total number of people receiving the vaccine each year. Or weather to focus more on the female or male audience, or to focus on what age group. 
 
-* Recommendation 1
-* Recommendation 2
+* If making awarness campaings, target the younger audience
+* Incentivize people to talk to their doctor about vaccination
 * Recommendation 3
 ***
 
