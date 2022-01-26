@@ -30,14 +30,18 @@ The information we have is from a 2009 U.S. National H1N1 Flu Survey. The featur
  * The dataset in question does not contain any continuous variables, making it perfect for classification. There were missing values that were inputed with median values when applicable to prevent information loss, and there were Categorical values in some features, that had to be OneHotEncoded to be part of the data.
 
 * We've constructed simple prediction models using the following methods:
- -- Logistic Regression
- -- K-Nearest Neighbours
- -- Naive Bayes
- -- Decision Trees
- -- Random Forest
- -- Gradient Boost
- -- Hist Gradient Boost
-And we have used hyperparameter tuning to improve the last three models in the above list.
+  - Logistic Regression
+  - K-Nearest Neighbours
+  - Naive Bayes
+  - Decision Trees
+  - Random Forest
+  - Gradient Boost
+  - Hist Gradient Boost
+
+* We have used hyperparameter tuning to improve the last three models in the above list, achieving the precision of, in increasing order:
+ - 0.7826
+ - 0.7252
+ - 0.7945
 
 ***
 
@@ -55,23 +59,20 @@ And we have used hyperparameter tuning to improve the last three models in the a
 
 ![graph3](./Images/GBC_cm.JPG)
 
-* More graphs?
-
-![graph4](./images/image_4.png)
 ***
 
 ## Conclusions
 
 Given all the information we gathered and visualized, the recommendations we have are:
 ***
-* Recommendation
+* If making awarness campaings, target the younger audience
 
-Explanation
+Younger people are less likely in general to have taken the vaccine. A campaing targeting younger people would reach a larger audience then one targeting older people, which are more likely to have taken their vaccines already.
 
 ***
-* Recommendation
+* Incentivize people to talk to their doctor about vaccination
 
-Explanation
+The data shows that people listen to their doctors. The more doctors recommend vaccination, there will likely be more people getting vaccinated.
 
 ***
 * Recommendation
