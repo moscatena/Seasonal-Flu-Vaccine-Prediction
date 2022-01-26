@@ -1,4 +1,4 @@
-# dsc-phase-3-project
+# Seasonal Flu Vaccine Prediction
 
 ![intro_img](./Images/DHandHS2.png)
 
@@ -10,7 +10,7 @@ The goal of this project was to build a classifier to predict whether someone wa
 
 * If making awarness campaings, target the younger audience
 * Incentivize people to talk to their doctor about vaccination
-* Recommendation 3
+* Facilitate Health Insurance
 ***
 
 ## Business Problem
@@ -25,7 +25,7 @@ The goal of this project was to build a classifier to predict whether someone wa
 The information we have is from a 2009 U.S. National H1N1 Flu Survey. The features cover social, economic and demographic background of the participants, as well as opinions on risks of illnes, vaccine effectiveness, and behaviour. The full set of features can be found [here](https://www.drivendata.org/competitions/66/flu-shot-learning/page/211/). It consisted of over 26000 samples with 35 different features.
 ***
 
-## Methods
+## Methods & Evaluation Metrics
  
  * The dataset in question does not contain any continuous variables, making it perfect for classification. There were missing values that were inputed with median values when applicable to prevent information loss, and there were Categorical values in some features, that had to be OneHotEncoded to be part of the data.
 
@@ -37,6 +37,9 @@ The information we have is from a 2009 U.S. National H1N1 Flu Survey. The featur
   - Random Forest
   - Gradient Boost
   - Hist Gradient Boost
+
+We chose precision as our main evaluation metric for our models over recall because, given any amount of incorrect predictions, we’d rather focus on the ones where the individual have not received the vaccine but the model predicts they did (false positives) over those the model predicted didn’t receive the vaccines, but did (false negatives).
+
 
 * We have used hyperparameter tuning to improve the last three models in the above list, achieving the precision of, in increasing order:
  - 0.7826
@@ -63,7 +66,7 @@ The information we have is from a 2009 U.S. National H1N1 Flu Survey. The featur
 
 ## Conclusions
 
-Given all the information we gathered and visualized, the recommendations we have are:
+Given all the information we modeled, the recommendations we have are:
 ***
 * If making awarness campaings, target the younger audience
 
@@ -75,9 +78,9 @@ Younger people are less likely in general to have taken the vaccine. A campaing 
 The data shows that people listen to their doctors. The more doctors recommend vaccination, there will likely be more people getting vaccinated.
 
 ***
-* Recommendation
+* Facilitate Health Insurance
 
-Explanation
+Having a health insurance plan is an important indicator when predicting the likelihood of someone gettin vaccinated. That makes sense, giving that people that have have insurence are more likely to want also look after their health in other ways as well.
 ***
 
 ## For More Information
