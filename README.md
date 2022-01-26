@@ -1,6 +1,6 @@
 # dsc-phase-3-project
 
-![intro_img](./Images/DHandHS.png)
+![intro_img](./Images/DHandHS2.png)
 
 **Authors**: Anthony Warren, Marcelo Scatena, Piotr Czolpik
 
