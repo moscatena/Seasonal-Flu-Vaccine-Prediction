@@ -53,7 +53,7 @@ And we have used hyperparameter tuning to improve the last three models in the a
 
 * Below is the Confusion Matrix of our most successful model, the tuned Gradient Boosting Classifier. With it we achieved a Precision of 0.7834 with an Accuracy of 0.7856.
 
-![graph3](./Images/GBC_cm.jpg)
+![graph3](./Images/GBC_cm.JPG)
 
 * More graphs?
 
