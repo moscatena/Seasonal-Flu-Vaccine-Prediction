@@ -6,10 +6,10 @@
 
 ## Overview
 
-The goal of this project was to build a classifier to predict whether someone was vaccinated against the seasonal flu or not as accurately as possible. Flu season comes around yearly. Every year people either take the flu shot or they do not. We made splits in Age gaps, genders, children in households, etc to see the statistical side of things before we did the modeling. Also we tried to answer some questions such as which subsets of the population should you target when hoping to increase the total number of people receiving the vaccine each year. Or weather to focus more on the female or male audience, or to focus on what age group. 
+The goal of this project was to build a classifier to predict whether someone was vaccinated against the seasonal flu or not as accurately as possible. Flu season comes around yearly. Every year people either take the flu shot or they do not. We made splits in Age gaps, genders, children in households, etc to see the statistical side of things before we did the modeling. Also we tried to answer some questions such as which subsets of the population should you target when hoping to increase the total number of people receiving the vaccine each year. Or weather to focus more on the female or male audience, or to focus on what age group. With those in mind our recommendations to the Department of Healt are:
 
 * Raise awareness of dangers of the seasonal flu via new campaigns to everyone
-* A more specific campaign towards folks aged below their forties could be more beneficial as they are the least likely age groups to be vaccinated
+* A more specific campaign towards folks aged below their mid thirties
 * Have doctors and practitioners reach out to patients to take the vaccine
 ***
 
@@ -52,22 +52,24 @@ The tradeoff for getting higher in Precision though, is that you may have to sac
 
 * The Feature Permutation shows how important each feature was for the model to generate a prediction. Here we selected the seven most important ones to display.
 
-![graph2](./Images/Permutation_Importances.png)
+![graph2](./Images/Permutation_Importances2.png)
 
-* Below is the Confusion Matrix of our most successful model, the tuned Gradient Boosting Classifier. With it we achieved a Precision of around 79% with an Accuracy of around 75%.
+* Below is the Confusion Matrix of our most successful model, a tuned  version of the Gradient Boosting Classifier. With it we achieved a Precision of around 79% with an Accuracy of around 75%.
 
 ![graph3](./Images/GBC_cm.JPG)
+This plot shows us the top seven features ranked by importance by our model. We can clearly see that opinions, which can be translated to level of information, have a very igh impact in predicting our target. That, paired with Doctors Recommendation, form an axis which the Department of Helth can influence with more information, that should lead into higher vaccination turnout.
 
-* Since age group is one of our most important features for predicting wheter an individual has taken the vaccine, we also looked into which percentage each group has taken the vaccine.
+* Since age group is also one of our most important features for predicting wheter an individual has taken the vaccine, we also looked into which percentage each group has taken the vaccine.
 
 ![graph4](./Images/Age_group.png)
+We can see here that the percentage of people vaccinated in the older groups is higher than the one in the younger groups. Targeting a group with a lower percentage of vaccinated people should increase the number of new vaccinations more than targeting one that already has the majority of it's population getting the vaccine.
 
 ***
 
 ## Conclusions
 
 Given all the information we modeled, the recommendations we have are:
-***
+
 * Personal Opinions Matters
   - Raise awareness of dangers of the seasonal flu via new campaigns to everyone. Peoples own opinions about the risks of the flu are highly correlated with them getting the vaccine or not. New campaigns talking about the risks could have a positive effect in vaccination rollout.
 * Age Matters
@@ -85,7 +87,6 @@ For any additional questions, please contact<br />
 **Piotr Czolpik: Piotrczo1992@gmail.com**<br />
 
 ## Repository Structure
-
 
 ```
 ├── README.md                           
