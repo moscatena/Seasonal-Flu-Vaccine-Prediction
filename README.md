@@ -8,16 +8,17 @@
 
 The goal of this project was to build a classifier to predict whether someone was vaccinated against the seasonal flu or not as accurately as possible. Flu season comes around yearly. Every year people either take the flu shot or they do not. We made splits in Age gaps, genders, children in households, etc to see the statistical side of things before we did the modeling. Also we tried to answer some questions such as which subsets of the population should you target when hoping to increase the total number of people receiving the vaccine each year. Or weather to focus more on the female or male audience, or to focus on what age group. 
 
-* If making awarness campaings, target the younger audience
-* Incentivize people to talk to their doctor about vaccination
-* Facilitate Health Insurance
+* Raise awareness of dangers of the seasonal flu via new campaigns to everyone
+* A more specific campaign towards folks aged below their forties could be more beneficial as they are the least likely age groups to be vaccinated
+* Have doctors and practitioners reach out to patients to take the vaccine
 ***
 
 ## Business Problem
 
-* Train and run a model that can correctly identify the likelihood that a randomly chosen individual received the seasonal flu vaccine or not
+* Provide recommendations about what could be done to increase the number of vaccinated people
 * Find out which characteristics lead people to be more or less prone to have taken the seasonal flu vaccine 
 * Use that information to make targeted campaigns to raise vaccine awareness, and see what else could be done do to increase the number of vaccinated people in next campaigns
+* Train and run a model that can correctly identify the likelihood that a randomly chosen individual received the seasonal flu vaccine or not
 ***
 
 ## Data
@@ -39,12 +40,7 @@ The information we have is from a 2009 U.S. National H1N1 Flu Survey. The featur
   - Hist Gradient Boost
 
 We chose precision as our main evaluation metric for our models over recall because, given any amount of incorrect predictions, we’d rather focus on the ones where the individual have not received the vaccine but the model predicts they did (false positives) over those the model predicted didn’t receive the vaccines, but did (false negatives).
-
-
-* We have used hyperparameter tuning to improve the last three models in the above list, achieving the precision of, in increasing order:
- - 0.7826
- - 0.7252
- - 0.7945
+The tradeoff for getting higher in Precision though, is that you may have to sacrifice Accuracy to do so. Because of that, we didn't simply chose models that have the higher Precision score, but only did so if they had an Accuracy above 75%.
 
 ***
 
@@ -58,7 +54,7 @@ We chose precision as our main evaluation metric for our models over recall beca
 
 ![graph2](./Images/Permutation_Importances.png)
 
-* Below is the Confusion Matrix of our most successful model, the tuned Gradient Boosting Classifier. With it we achieved a Precision of 0.7834 with an Accuracy of 0.7856.
+* Below is the Confusion Matrix of our most successful model, the tuned Gradient Boosting Classifier. With it we achieved a Precision of around 79% with an Accuracy of around 75%.
 
 ![graph3](./Images/GBC_cm.JPG)
 
@@ -68,27 +64,23 @@ We chose precision as our main evaluation metric for our models over recall beca
 
 Given all the information we modeled, the recommendations we have are:
 ***
-* If making awarness campaings, target the younger audience
+* Personal Opinions Matters
+  - Peoples own opinions about the risks of the flu are highly correlated with them getting the vaccine or not.
 
-Younger people are less likely in general to have taken the vaccine. A campaing targeting younger people would reach a larger audience then one targeting older people, which are more likely to have taken their vaccines already.
+* Age Matters
+  - Beople below their fourties are less likely in general to have taken the vaccine. A campaing targeting younger people would reach a larger audience then one targeting older people, which are more likely to have taken their vaccines already.
+
+* Professional Opinions Matters
+  - Lastly, people tend to listen to their doctors. We suggest communicating to doctors about proactive campaigns, be it via email or telephone,
+where practitioners reach out to patients to comunicate the importance of the vaccine.
 
 ***
-* Incentivize people to talk to their doctor about vaccination
-
-The data shows that people listen to their doctors. The more doctors recommend vaccination, there will likely be more people getting vaccinated.
-
-***
-* Facilitate Health Insurance
-
-Having a health insurance plan is an important indicator when predicting the likelihood of someone gettin vaccinated. That makes sense, giving that people that have have insurence are more likely to want also look after their health in other ways as well.
-***
-
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase3-project.ipynb) or our [presentation](./dsc-phase3-presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./final_notebook.ipynb) or our [presentation](./final_presentation.pdf).
 
 For any additional questions, please contact<br />
-**Anthony Warren:**<br />
+**Anthony Warren: anthonywarren6@gmail.com**<br />
 **Marcelo Scatena: marcelo.oddo@gmail.com**<br />
 **Piotr Czolpik:**<br />
 
@@ -97,8 +89,8 @@ For any additional questions, please contact<br />
 
 ```
 ├── README.md                           
-├── dsc-phase3-project-template.ipynb   
-├── DS_Project_Presentation.pdf         
+├── final_notebook.ipynb   
+├── final_presentation.pdf         
 ├── data                                
 └── images                              
 ```
