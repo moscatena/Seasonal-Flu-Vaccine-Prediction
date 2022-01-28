@@ -58,6 +58,10 @@ The tradeoff for getting higher in Precision though, is that you may have to sac
 
 ![graph3](./Images/GBC_cm.JPG)
 
+* Since age group is one of our most important features for predicting wheter an individual has taken the vaccine, we also looked into which percentage each group has taken the vaccine.
+
+![graph4](./Images/Age_group.png)
+
 ***
 
 ## Conclusions
