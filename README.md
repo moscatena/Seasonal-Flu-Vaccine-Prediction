@@ -50,13 +50,16 @@ The tradeoff for getting higher in Precision though, is that you may have to sac
 
 ![graph1](./Images/Skyler_graph.png)
 
+* Below is the Confusion Matrix of our most successful model, a tuned  version of the Gradient Boosting Classifier. With it we achieved a Precision of around 79% with an Accuracy of around 75%.
+
+![graph3](./Images/GBC_cm.JPG)
+
+This model has decreased the total number of False Positives by 40%
+
 * The Feature Permutation shows how important each feature was for the model to generate a prediction. Here we selected the seven most important ones to display.
 
 ![graph2](./Images/Permutation_Importances2.png)
 
-* Below is the Confusion Matrix of our most successful model, a tuned  version of the Gradient Boosting Classifier. With it we achieved a Precision of around 79% with an Accuracy of around 75%.
-
-![graph3](./Images/GBC_cm.JPG)
 This plot shows us the top seven features ranked by importance by our model. We can clearly see that opinions, which can be translated to level of information, have a very igh impact in predicting our target. That, paired with Doctors Recommendation, form an axis which the Department of Helth can influence with more information, that should lead into higher vaccination turnout.
 
 * Since age group is also one of our most important features for predicting wheter an individual has taken the vaccine, we also looked into which percentage each group has taken the vaccine.
