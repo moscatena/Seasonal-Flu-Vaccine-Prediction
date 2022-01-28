@@ -71,7 +71,7 @@ Given all the information we modeled, the recommendations we have are:
 * Personal Opinions Matters
   - Raise awareness of dangers of the seasonal flu via new campaigns to everyone. Peoples own opinions about the risks of the flu are highly correlated with them getting the vaccine or not. New campaigns talking about the risks could have a positive effect in vaccination rollout.
 * Age Matters
-  - A more specific campaign towards folks aged below their forties could be more beneficial as they are the least likely age groups to be vaccinated. People below their forties are the least likely age group to take the seasonal flu vaccine. We reccomend campaings that target those groups more specifically, since they'll be targeting a larger non vaccinated audience.
+  - A more specific campaign towards folks aged below their mid thirties could be more beneficial as they are the least likely age group to be vaccinated. We reccomend campaings that target that group more specifically, since they'll be targeting a larger non vaccinated audience.
 * Professional Opinions Matters
   - Lastly, have doctors and practitioners reach out to patients to take the vaccine. People tend to listen to their doctors. We suggest communicating to doctors about proactive campaigns, be it via email or telephone,where practitioners reach out to patients to comunicate the importance of the vaccine.
 ***
@@ -82,7 +82,7 @@ Please review our full analysis in [our Jupyter Notebook](./final_notebook.ipynb
 For any additional questions, please contact<br />
 **Anthony Warren: anthonywarren6@gmail.com**<br />
 **Marcelo Scatena: marcelo.oddo@gmail.com**<br />
-**Piotr Czolpik:**<br />
+**Piotr Czolpik: Piotrczo1992@gmail.com**<br />
 
 ## Repository Structure
 
